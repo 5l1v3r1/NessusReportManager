@@ -1,0 +1,145 @@
+html,body{background:#f2f2f2 url(../img/subtle_freckles.png) repeat;}
+body{padding-top:0px;padding-left:0px; padding-right: 0px;}
+.header-mehmet{
+	*position: relative;
+  	*z-index: 2;
+	border: 0px ;
+}
+.golge-ve-gecikme{
+	-webkit-box-shadow: 0 0 8px #D0D0D0;
+	-webkit-animation-name:fadeIn;
+	-webkit-animation-timing-function:ease-out;
+	-webkit-animation-duration:.5s;
+	-moz-animation-name:fadeIn;
+	-moz-animation-timing-function:ease-out;
+	-moz-animation-duration:.5s
+}
+
+.sadecegecikme{
+	-webkit-animation-name:fadeIn;
+	-webkit-animation-timing-function:ease-out;
+	-webkit-animation-duration:.5s;
+	-moz-animation-name:fadeIn;
+	-moz-animation-timing-function:ease-out;
+	-moz-animation-duration:.5s
+}
+
+.topbar h1{display:inline;}
+.topbar {border: 1px solid #D0D0D0;};
+.topbar h1 a.brand{font-family:'Cookie',cursive;font-size:48px;margin-top:-15px;}
+.topbar h1 a.brand:hover{text-decoration:none;color:#017dfe;}
+.topbar-inner,.topbar .fill{height:100px !important;}
+.topbar-inner,.topbar .fill{background:#222 url(../img/inflicted.png) repeat;}
+.fill .container{padding-top:60px; }
+.topbar .fill{box-shadow:0 0 20px 4px rgba(0,0,0,0.4);}
+img.card{width:500px;height:500px;-webkit-box-shadow:0px 0px 4px 2px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 1px 1px rgba(0,0,0,0.2);box-shadow:0px 0px 3px 1px rgba(0,0,0,0.2);}
+img.card:hover{-webkit-box-shadow:0px 0px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:0px 0px 1px 1px rgba(0,0,0,0.3);box-shadow:0px 0px 3px 1px rgba(0,0,0,0.3);}
+.card-area{position:relative;/* nodig voor absolute pos. van msg */}
+.card-area .card-msg{line-height:1.2em;font-weight:bold;font-size:14px;}
+.card-area h2 img{opacity:0.8;}
+textarea{resize:none;}
+.intro{margin-top:10px;color:#888;text-align:right;}
+.intro:hover{color:#666;}
+.num-chars{color:#bbb;}
+hr{border-bottom:1px solid #ddd;}
+h2 small,h3 small{font-weight:bold;color:#999;}
+h2,h3,h4{text-shadow:0 1px 0 #fff;}
+h2.hero{font-size:48px;font-weight:normal;letter-spacing:-2px;}
+h2.hero small{letter-spacing:0;}
+.media-grid img.thumbnail{width:90px;height:90px;}
+footer{border-top:1px solid #ddd;}
+@-webkit-keyframes fadeIn{0%{opacity:0}
+100%{opacity:1}
+}
+@-moz-keyframes fadeIn{0%{opacity:0}
+100%{opacity:1}
+}
+.wdc-main{-webkit-animation-name:fadeIn;-webkit-animation-timing-function:ease-out;-webkit-animation-duration:.5s;-moz-animation-name:fadeIn;-moz-animation-timing-function:ease-out;-moz-animation-duration:.5s}
+.wdc-main a{color:#147a76;border-bottom:1px solid #a6d2d0;}
+.wdc-main a:hover{color:#000;text-decoration:none;border-bottom:1px solid #bbb;}
+.show-alert{display:none;}
+
+@charset 'UTF-8';
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  border-width: 0 0 100px 200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+  cursor: pointer;
+}
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+.files .progress {
+  width: 200px;
+}
+.progress-animated .bar {
+  background: url(../img/progressbar.gif) !important;
+  filter: none;
+}
+.fileupload-loading {
+  position: absolute;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  background: url(../img/loading.gif) center no-repeat;
+  display: none;
+}
+.fileupload-processing .fileupload-loading {
+  display: block;
+}
+
+/* Fix for IE 6: */
+*html .fileinput-button {
+  line-height: 22px;
+  margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+*+html .fileinput-button {
+  margin: 1px 0 0 0;
+}
+
+@media (max-width: 480px) {
+  .files .btn span {
+    display: none;
+  }
+  .files .preview * {
+    width: 40px;
+  }
+  .files .name * {
+    width: 80px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .files .progress {
+    width: 20px;
+  }
+  .files .delete {
+    width: 60px;
+  }
+}
